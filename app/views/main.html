@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row col-md-12 center-block">
+<a class="btn btn-primary" ng-href="#/addMovie">Add Movie</a>
+
+<table width="80%">
+  <tr ng-repeat="x in movies">
+     <td>{{x.title}}</td>
+     <td><a class="btn btn-primary" ng-href="#/viewMovies/{{x._id}}">View Movie</a></td>
+
+     <td><a class = "btn btn-danger">Delete Movie</a></td>
+  </td>
+    </tr>
+</table> 
+
+</div>
+
+
